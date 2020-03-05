@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Document</title>
+		<title>Live Code Editor</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
 		* {
@@ -51,10 +51,12 @@
 		.col-11 {width: 91.66%;}
 		.col-12 {width: 100%;}
 		}
-
 		textarea, iframe {
 			width: 100%;
 			min-height: 70vh
+		}
+		[value="Natijani ko'rish"] {
+			width: 100%
 		}
 		</style>
 		<script>
@@ -73,13 +75,15 @@
 	</head>
 	<body>
 		<div class="row">
-			<div class="col-s-6">
-			<textarea id="mycode"  style="border:solid 5px steelblue" >  </textarea></p>
-		<input onclick="update();" type="button" value="show result"></p>
+			<div class="col-s-5">
+				<textarea id="mycode"  style="border:solid 5px steelblue"></textarea>
+			</div>
+			<div class="col-s-2">
+				<input onclick="update();" type="button" value="Natijani ko'rish">
+			</div>
+			<div class="col-s-5">
+			<iframe id="display"  style="border:5px solid steelblue" ></iframe>
 		</div>
-		<div class="col-s-6">
-		<iframe id="display"  style="border:5px solid steelblue" ></iframe></p>
 	</div>
-</div>
 </body>
 </html>
